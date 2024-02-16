@@ -1,0 +1,52 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="index.css">
+</head>
+<title> design portfolio </title>
+
+<body>
+  <button class="header" onclick="homePage('index.html')">the hindi essentials</button>
+  <script>
+    function homePage(url) {
+      window.location.href = url;
+    }
+    </script>
+    
+  <select id="myDropdown" name="myDropdown">
+    <option value="index.html">home</option>
+    <option value="currency.html">currency </option>
+    <option value="essentials.html">essential items</option>
+    <option value="phrases.html">common phrases</option>
+  </select>
+  <br><br><br><br><br><br>
+  <div class="flex-container">
+    <h2> About this website </h2>
+    <p>Most children that live in families with working parents, use English as their first language at home.
+      This makes it difficult for them to converse in the local language for their country while travelling around, buying necessities and mare more instances. 
+      i have created this website to help children find it easier to converse with other people in hindi, especially during vital instances.</p>
+    </div>
+  
+  <br><br>
+<div class="takemehome">
+  <a href="currency.html">
+    <button class="button button1">currency</button>
+  </a>
+  <a href="essentials.html">
+    <button class="button button2">essentials</button>
+  </a>
+  <a href="phrases.html">
+    <button class="button button3">phrases</button>
+  </a>
+</div>
+
+
+  <script>
+    const myDropdown = document.getElementById("myDropdown");
+    myDropdown.addEventListener("change", function () {
+      window.location.href = this.value;
+    });
+  </script>
+</body>
+
+</html>
